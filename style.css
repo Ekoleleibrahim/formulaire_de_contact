@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(95, 147, 118, 0.676);
+    font-family: cursive, sans-serif;
+    color: black;
+}
+form{
+    margin-top: 20px;
+}
+sup{
+    color: #054A29;
+}
+.flex{
+    display: flex;
+    gap: 20px;
+
+}
+.champs{
+    margin-bottom: 15px;
+}
+label{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.container{
+    width: 500px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+}
+input[type="text"]{
+    width: 100%;
+    padding: 7px 25px 7px 0;
+    text-indent: 10px;
+}
+input[type="checkbox"]{
+    padding: 5px;
+    height: 100%;
+}
+input[type="radio"]{
+    cursor: pointer;
+}
+.radio{
+    width: 100%;
+    padding: 10px;
+}
+input,
+textarea,
+.radio{
+    border-radius: 3px;
+    border: 1px solid black;
+    outline: none;
+}
+textarea{
+    width: 100%;
+    height: 100px;
+    resize: none;
+    padding: 10px;
+}
+input[type="text"],
+textarea{
+    font-size: 16px;
+}
+input:focus,
+textarea:focus{
+    border: 2px solid #054A29;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background-color: #054A29;
+    color: white;
+    font-weight: 700;
+    border-radius: 3px;
+}
+button:hover{
+    background-color: #0e5734;
+}
+
+@media (max-width: 520px) {
+    body{
+        height: auto;
+        padding: 20px;
+        background-color: #fff;
+        font-family: monospace, sans-serif;
+    }
+    .container{
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+        padding: 0;
+    }
+    .flex{
+        flex-direction: column;
+        gap: 0;
+    }
+    .radio:first-child{
+        margin-bottom: 15px;
+    }
+}

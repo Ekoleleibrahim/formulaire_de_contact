@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Contact Us</h2>
+
+        <form>
+            <div class="flex">
+                <div class="champs">
+                    <div>
+                        <label for="name">First Name <sup>*</sup></label>
+                    </div>
+                    <div>
+                        <input type="text" id="name">
+                    </div>
+                </div>
+                <div class="champs">
+                    <div>
+                        <label for="lastname">Last Name <sup>*</sup></label>
+                    </div>
+                    <div>
+                        <input type="text" id="lastname">
+                    </div>
+                </div>
+            </div>
+            <div class="champs">
+                <div>
+                    <label for="email">Email Adress <sup>*</sup></label>
+                </div>
+                <div>
+                    <input type="text" id="email">
+                </div>
+            </div>
+            <div class="champs">
+                <div>
+                    <label for="type">Query Type <sup>*</sup></label>
+                </div>
+                <div class="flex">
+                    <div class="radio">
+                        <input type="radio" id="type" name="type"> General Enquiry
+                    </div>
+                    <div class="radio">
+                        <input type="radio" id="type" name="type"> Support Request
+                    </div>
+                </div>
+            </div>
+            <div class="champs">
+                <div>
+                    <label for="message">Message <sup>*</sup></label>
+                </div>
+                <div>
+                    <textarea id="message"></textarea>
+                </div>
+            </div>
+            <div class="champs">
+                <input type="checkbox"> I consent to being contacted by the team<sup>*</sup>
+            </div>
+
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
